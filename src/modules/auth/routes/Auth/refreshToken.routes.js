@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const { validate } = require("../../middlewares/validate.middleware");
-const { refreshTokenSchema } = require("../../utils/validation");
+const { validate } = require("../../../../shared/middlewares/validate.middleware");
+const { refreshTokenSchema } = require("../../../../shared/utils/validation");
 const {
   refreshTokenController,
 } = require("../../controllers/Auth/refreshToken.controller");

@@ -1,16 +1,16 @@
 const express = require("express");
 const router = express.Router();
-const { validate } = require("../../middlewares/validate.middleware");
+const { validate } = require("../../../../shared/middlewares/validate.middleware");
 const {
   forgotPasswordSchema,
   resetPasswordSchema,
-} = require("../../utils/validation");
+} = require("../../../../shared/utils/validation");
 const {
   forgotPasswordController,
-} = require("../../controllers/Auth/forgotPassword.controller");
+} = require("../../../auth/controllers/Auth/forgotPassword.controller");
 const {
   resetPasswordController,
-} = require("../../controllers/Auth/resetPassword.controller");
+} = require("../../../auth/controllers/Auth/resetPassword.controller");
 
 // Validate controller imports
 if (!forgotPasswordController || !resetPasswordController) {

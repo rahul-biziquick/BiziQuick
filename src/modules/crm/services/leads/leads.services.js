@@ -1,13 +1,13 @@
 const { PrismaClient } = require("@prisma/client");
 const createError = require("http-errors");
-const logger = require("../../utils/logger");
+const logger = require("../../../../shared/utils/logger");
 const csv = require("csv-parse");
 const fs = require("fs");
 const { Parser } = require("json2csv");
 const {
   getPaginationParams,
   getPaginatedResponse,
-} = require("../../utils/pagination");
+} = require("../../../../shared/utils/pagination");
 
 const prisma = new PrismaClient();
 

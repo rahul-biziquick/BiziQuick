@@ -1,5 +1,5 @@
 const createError = require("http-errors");
-const logger = require("../../utils/logger");
+const logger = require("../../../../shared/utils/logger");
 const { logoutServices } = require("../../services/Auth/logout.services");
 
 /**

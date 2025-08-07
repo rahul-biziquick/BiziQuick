@@ -1,8 +1,8 @@
 const createError = require("http-errors");
-const logger = require("../../../utils/logger");
+const logger = require("../../../../../shared/utils/logger");
 const {
   listLeadScores,
-} = require("../../../services/leads/leadScores.services");
+} = require("../../../../../modules/");
 
 const listLeadScoresController = async (req, res, next) => {
   try {

@@ -1,10 +1,10 @@
 const { v4: uuidv4 } = require("uuid");
-const prisma = require("../../config/prismaClient");
-const logger = require("../../utils/logger");
+const prisma = require("../../../../shared/config/prismaClient");
+const logger = require("../../../../shared/utils/logger");
 const createError = require("http-errors");
 
 const logoutServices = async (email, platform) => {
-  if (!["WEB", "MOBILE"].includes(platform)) {
+  if (!["WEB", "MOBILE"].includes(platform)) {ddddddddddddsdddsfdasf
     logger.warn("Invalid platform during logout", { platform });
     throw createError(400, "Invalid platform");
   }

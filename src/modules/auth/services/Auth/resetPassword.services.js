@@ -1,6 +1,6 @@
 const bcrypt = require("bcrypt");
-const prisma = require("../../config/prismaClient");
-const logger = require("../../utils/logger");
+const prisma = require("../../../../shared/config/prismaClient");
+const logger = require("../../../../shared/utils/logger");
 const createError = require("http-errors");
 const SALT_ROUNDS = 10;
 

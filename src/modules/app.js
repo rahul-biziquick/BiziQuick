@@ -80,7 +80,7 @@ const swaggerOptions = {
   },
   apis: [
     path.join(__dirname, "./routes/Auth/**/*.routes.js"),
-    path.join(__dirname, "./routes/leads/**/*.routes.js"),
+    path.join(__dirname, "./../**/*.routes.js"),
     path.join(__dirname, "./routes/tenants/**/*.routes.js"),
     // Removed 'components.js' from here because it is JS, not part of JSDoc annotations or YAML
   ],
@@ -99,7 +99,7 @@ app.use(
 
 // Routes
 const authRoutes = require("../modules/auth/routes/Auth");
-const leadsRoutes = require("./routes/leads");
+const leadsRoutes = require("./crm/routes/leads");
 const tenantsRoutes = require("./routes/tenants");
 
 // Validate route exports

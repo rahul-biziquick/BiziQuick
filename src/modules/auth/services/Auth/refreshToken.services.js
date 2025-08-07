@@ -1,9 +1,9 @@
-const prisma = require("../../config/prismaClient");
+const prisma = require("../../../../shared/config/prismaClient");
 const {
   generateAccessToken,
   verifyRefreshToken,
-} = require("../../utils/jwt.util");
-const logger = require("../../utils/logger");
+} = require("../../../../shared/utils/jwt.util");
+const logger = require("../../../../shared/utils/logger");
 const createError = require("http-errors");
 
 const refreshTokenServices = async (refreshToken, platform) => {

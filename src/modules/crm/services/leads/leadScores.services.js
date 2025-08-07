@@ -1,6 +1,6 @@
-const prisma = require("../../config/prismaClient");
+const prisma = require("../../../../shared/config/prismaClient");
 const createError = require("http-errors");
-const logger = require("../../utils/logger");
+const logger = require("../../../../shared/utils/logger");
 
 const listLeadScores = async (tenantId, user) => {
   const tenant = await prisma.tenant.findUnique({ where: { id: tenantId } });

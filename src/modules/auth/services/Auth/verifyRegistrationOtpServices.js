@@ -1,6 +1,6 @@
-const prisma = require("../../../../modules/auth/");
-const { verifyOTP } = require("../../utils/otp.util");
-const logger = require("../../utils/logger");
+const prisma = require("../../../../shared/config/prismaClient");
+const { verifyOTP } = require("../../../../shared/utils/otp.util");
+const logger = require("../../../../shared/utils/logger");
 const createError = require("http-errors");
 
 const verifyRegistrationOtpServices = async (email, otp) => {

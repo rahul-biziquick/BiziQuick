@@ -1,6 +1,6 @@
 const createError = require("http-errors");
-const logger = require("../../utils/logger");
-const { archiveLead } = require("../../services/leads/leads.services");
+const logger = require("../../../../shared/utils/logger");
+const { archiveLead } = require("../../../../modules/crm/services/leads/leadScores.services");
 
 const archiveLeadController = async (req, res, next) => {
   try {

@@ -1,5 +1,5 @@
 const createError = require("http-errors");
-const logger = require("../../utils/logger");
+const logger = require("../../../../shared/utils/logger");
 const { listLeads } = require("../../services/leads/leads.services");
 
 const listLeadsController = async (req, res, next) => {

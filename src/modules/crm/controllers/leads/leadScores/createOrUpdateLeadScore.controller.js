@@ -1,8 +1,8 @@
 const createError = require("http-errors");
-const logger = require("../../../utils/logger");
+const logger = require("../../../../../shared/utils/logger");
 const {
   createOrUpdateLeadScore,
-} = require("../../../services/leads/leadScores.services");
+} = require("../../../../crm/services/leads/leads.services");
 
 const createOrUpdateLeadScoreController = async (req, res, next) => {
   try {

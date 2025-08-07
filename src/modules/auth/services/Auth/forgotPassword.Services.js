@@ -1,8 +1,8 @@
 const bcrypt = require("bcrypt");
 const { v4: uuidv4 } = require("uuid");
-const prisma = require("../../config/prismaClient");
-const { sendOTPEmail } = require("../../utils/email.util");
-const logger = require("../../utils/logger");
+const prisma = require("../../../../shared/config/prismaClient");
+const { sendOTPEmail } = require("../../../../shared/utils/email.util");
+const logger = require("../../../../shared/utils/logger");
 const createError = require("http-errors");
 const RESET_TOKEN_EXPIRY_MS = 15 * 60 * 1000;
 

@@ -1,14 +1,14 @@
 const express = require("express");
 const router = express.Router();
-const { authenticate } = require("../../middlewares/auth.middleware");
-const { validate } = require("../../middlewares/validate.middleware");
+const { authenticate } = require("../../../../shared/middlewares/auth.middleware");
+const { validate } = require("../../../../shared/middlewares/validate.middleware");
 const {
   createLeadController,
   listLeadsController,
   getLeadController,
   updateLeadController,
   archiveLeadController,
-} = require("../../controllers/leads");
+} = require("../../../../modules/crm/controllers/leads");
 const {
   createLeadSchema,
   updateLeadSchema,

@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const { authenticate } = require("../../middlewares/auth.middleware");
-const { validate } = require("../../middlewares/validate.middleware");
-const { logoutSchema } = require("../../utils/validation");
+const { authenticate } = require("../../../../shared/middlewares/auth.middleware");
+const { validate } = require("../../../../shared/middlewares/validate.middleware");
+const { logoutSchema } = require("../../../../shared/utils/validation");
 const {
   logoutController,
-} = require("../../controllers/Auth/logout.controller");
+} = require("../../../../modules/auth/controllers/Auth/logout.controller");
 
 // Validate controller import
 if (!logoutController) {
